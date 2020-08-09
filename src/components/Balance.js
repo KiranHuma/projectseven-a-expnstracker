@@ -22,7 +22,7 @@ export const Balance = () => {
     }}
   }
   return (
-    <>
+  <>
       <h4 type="submit" onClick={blnc}>Your Balance</h4>
     
     <h1 type="submit" onClick={blnc}>${total}</h1>
