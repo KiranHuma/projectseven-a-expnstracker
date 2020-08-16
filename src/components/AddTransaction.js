@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
 import swal from 'sweetalert';
+import { initNotification } from '../services/firebaseService'
 
 
 export const AddTransaction = () => {
@@ -39,7 +40,7 @@ export const AddTransaction = () => {
           >
           <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
         </div>
-        <button className="btn">Add transaction</button>
+        <button className="btn" onClick={initNotification}>Add transaction</button>
       </form>
     </>
   )
