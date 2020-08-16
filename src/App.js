@@ -49,12 +49,6 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </GlobalProvider>
-      
-
-    
-      <button onClick={initNotification}>
-        Configure Notification
-      </button>
     </div>
    
   );
